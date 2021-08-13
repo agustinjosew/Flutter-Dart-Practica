@@ -1,14 +1,34 @@
 void main(List<String> arguments) {
-  //variables genericas - var or dynamic
-  var animal = 'elefante';
-  var numero = '5';
-  String animal2 = 'Ciervo';
+  //operadores aritmeticos
+  int a = 8;
+  int b = 9;
 
-  dynamic animal3 = ' Perico';
+  //int suma = a + b;
+  int suma = (a - b) * 8;
+  suma += 3;
+  suma *= 3;
+  suma -= 3;
+  print(suma);
+  print("division:");
+  print(suma / 2);
+  print("Division con resultado entero");
+  print(suma ~/ 2);
+  print("Modulo division");
+  print(suma % 2);
 
-  //final, la misma asignacion una vez en su ciclo de vida
-  final double velocidadJugador = 5.5;
+  // operadores relaciones y de igualdad
+  print("***operadores relaciones y de igualdad***");
+  print(1 == 2);
+  print(1 == 1);
+  print(1 > 2);
+  print(1 < 2);
+  print(1 >= 2);
+  print(1 <= 2);
 
-  //const es similar a final pero tratado como una constante, mas que nada las usamos para accesibilidad de manera global
-  const double inteligencia = 1.2;
+  //operadores logicos
+  print("***operadores logicos***");
+  //and y or son los que mas uso
+  print(2 == 2 && 2 == 1);
+  print(1 == 1 && 2 == 2);
+  print(1 == 1 || 2 == 1);
 }
