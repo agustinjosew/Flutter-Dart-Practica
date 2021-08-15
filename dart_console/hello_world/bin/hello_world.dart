@@ -1,34 +1,26 @@
 void main(List<String> arguments) {
-  //operadores aritmeticos
-  int a = 8;
-  int b = 9;
+  int vidaJugador = 100;
+  final ataqueEnemigo = 45;
 
-  //int suma = a + b;
-  int suma = (a - b) * 8;
-  suma += 3;
-  suma *= 3;
-  suma -= 3;
-  print(suma);
-  print("division:");
-  print(suma / 2);
-  print("Division con resultado entero");
-  print(suma ~/ 2);
-  print("Modulo division");
-  print(suma % 2);
+  vidaJugador -= ataqueEnemigo;
+  vidaJugador -= ataqueEnemigo;
+  vidaJugador -= ataqueEnemigo;
+  // sentencias de control de flujo if-else
+  if (vidaJugador <= 0) {
+    print("Muerto");
+  } else
+    print("Vivo");
 
-  // operadores relaciones y de igualdad
-  print("***operadores relaciones y de igualdad***");
-  print(1 == 2);
-  print(1 == 1);
-  print(1 > 2);
-  print(1 < 2);
-  print(1 >= 2);
-  print(1 <= 2);
+  //causistica
+  
 
-  //operadores logicos
-  print("***operadores logicos***");
-  //and y or son los que mas uso
-  print(2 == 2 && 2 == 1);
-  print(1 == 1 && 2 == 2);
-  print(1 == 1 || 2 == 1);
+  // switch
+
+  // bucle for
+
+  // while
+
+  // assert
+
+  // expression ?
 }
