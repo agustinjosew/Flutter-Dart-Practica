@@ -1,5 +1,5 @@
 void main(List<String> arguments) {
-  int vidaJugador = 100;
+  /* int vidaJugador = 100;
   final ataqueEnemigo = 45;
 
   vidaJugador -= ataqueEnemigo;
@@ -9,10 +9,22 @@ void main(List<String> arguments) {
   if (vidaJugador <= 0) {
     print("Muerto");
   } else
-    print("Vivo");
+    print("Vivo"); */
 
-  //causistica
-  
+  //causistica con else if
+  final int vidaInicial = 100;
+  int vidaJugadorActual = 100;
+
+  final ataqueEnemigo = 50;
+
+  vidaJugadorActual -= ataqueEnemigo;
+  if (vidaJugadorActual <= 0) {
+    print("muerto");
+  } else if (vidaJugadorActual < vidaInicial && vidaJugadorActual > 0) {
+    print("esta herido $vidaJugadorActual");
+  } else {
+    print("esta vivo");
+  }
 
   // switch
 
