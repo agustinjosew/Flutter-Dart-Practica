@@ -1,34 +1,68 @@
+//import 'dart:convert';
+//import 'dart:io';
+
 void main(List<String> arguments) {
-  //operadores aritmeticos
-  int a = 8;
-  int b = 9;
+  /* int vidaJugador = 100;
+  final ataqueEnemigo = 45;
 
-  //int suma = a + b;
-  int suma = (a - b) * 8;
-  suma += 3;
-  suma *= 3;
-  suma -= 3;
-  print(suma);
-  print("division:");
-  print(suma / 2);
-  print("Division con resultado entero");
-  print(suma ~/ 2);
-  print("Modulo division");
-  print(suma % 2);
+  vidaJugador -= ataqueEnemigo;
+  vidaJugador -= ataqueEnemigo;
+  vidaJugador -= ataqueEnemigo;
+  // sentencias de control de flujo if-else
+  if (vidaJugador <= 0) {
+    print("Muerto");
+  } else
+    print("Vivo"); */
 
-  // operadores relaciones y de igualdad
-  print("***operadores relaciones y de igualdad***");
-  print(1 == 2);
-  print(1 == 1);
-  print(1 > 2);
-  print(1 < 2);
-  print(1 >= 2);
-  print(1 <= 2);
+  //causistica con else if
+/*   final int vidaInicial = 100;
+  int vidaJugadorActual = 100;
 
-  //operadores logicos
-  print("***operadores logicos***");
-  //and y or son los que mas uso
-  print(2 == 2 && 2 == 1);
-  print(1 == 1 && 2 == 2);
-  print(1 == 1 || 2 == 1);
+  final ataqueEnemigo = 50;
+
+  vidaJugadorActual -= ataqueEnemigo;
+  if (vidaJugadorActual <= 0) {
+    print("muerto");
+  } else if (vidaJugadorActual < vidaInicial && vidaJugadorActual > 0) {
+    print("esta herido $vidaJugadorActual");
+  } else {
+    print("esta vivo");
+  } */
+
+  // switch
+  print('------------------------------------------');
+  //var productoElegido = stdin.readLineSync();
+  var productoElegido = 'hamburguesa doble';
+
+  switch (productoElegido.trim()) {
+    case 'hamburguesa doble':
+      print('enviando el producto elegido a cocina');
+      break;
+    case 'hamburguesa simple':
+      print('enviando el producto elegido a cocina');
+      break;
+    default:
+      print('repite el pedido');
+      break;
+  }
+
+  // bucle for
+  print('------------------------------------------');
+  var listaDeCompra = ['galletas', 'pepas', 'ardillas'];
+  for (var productoDeLaLista in listaDeCompra) {
+    if (productoDeLaLista == 'pepas') break;
+    print('** - > $productoDeLaLista');
+  }
+
+  // while
+
+  // assert
+
+  var texto = 'assert aplicado';
+  assert(texto != null);
+
+  // expression ?
+  // condicion ? true : false;
+  (1 == 1) ? print('true') : print('false');
+  (1 == 2) ? print('true') : print('false');
 }
