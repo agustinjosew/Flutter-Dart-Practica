@@ -5,4 +5,10 @@ void main() {
   test('calculate', () {
     expect(calculate(), 42);
   });
+
+  test('String.split()', () {
+    var stringVar = 'casa,arbol,perro,tu vieja';
+    expect(
+        stringVar.split(','), equals(['casa', 'arbol', 'perro', 'tu vieja']));
+  });
 }
